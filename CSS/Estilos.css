@@ -1,0 +1,281 @@
+.rectangulo {
+	margin: 0%;
+    width: 100%; 
+    height: 50px; 
+    background-color: black; 
+    position: relative;   
+    left: 0; 
+}
+
+
+.contenido {
+    margin-top: px; 
+    position: center;
+ 
+}
+
+.Primercontenedor{
+	display: flex;
+}
+
+.cuadrado1 {
+	width: 70%; 
+    height: 500px; 
+    background-color: black;
+    position: relative; 
+    justify-content: center;
+    display: flex;
+    top: 0; 
+    left: 0;
+    display: flex;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+}
+.cuadrado11 {
+	width: 100%; 
+    height: 300px; 
+    background-color: black; 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+	margin: 10px;
+	margin-top: 100px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	
+}
+.cuadrado11 > h3 {
+
+	position: absolute; /* Permite posicionar el texto de forma absoluta dentro del contenedor */
+	color: white; /* Color del texto */
+	justify-content: center;
+	padding: 10px; 
+	margin: 100px;
+}
+.cuadrado1 > img{
+margin-top: 100px;
+width: 50%;
+height: 300px;
+position: relative;
+
+}
+
+.cuadrado1 > h1 {
+        position: absolute; /* Permite posicionar el texto de forma absoluta dentro del contenedor */
+        top: 0; /* Coloca el texto en la parte superior del contenedor */
+        color: white; /* Color del texto */
+        justify-content: center;
+        padding: 10px; /* Espaciado interno del texto */
+}
+
+.Segundocontenedor {
+	display: flex;
+}
+	
+.cuadrado3{
+width: 100%; 
+    height: 300px; 
+    background-color: white; 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+	margin: 10px;
+	margin-top: 100px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+}
+
+.cuadrado4 {
+    width: 70%; 
+    height: 500px; 
+    background-color: white;
+    position: relative; 
+    justify-content: center;
+    display: flex;
+    top: 0; 
+    float: right;
+    top: 10;
+    margin: 0px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px
+}
+
+.cuadrado4 > img{
+ margin-top: 100px;
+width: 50%;
+height: 300px;
+position: relative
+}
+
+.cuadrado3 > h3{
+	
+	position: absolute; /* Permite posicionar el texto de forma absoluta dentro del contenedor */
+	color: rgb(0, 0, 0); /* Color del texto */
+	justify-content: center;
+	padding: 10px; 
+	margin: 100px;
+}
+.cuadrado4 > h1{
+	    position: absolute; 
+        top: 0; 
+        color: rgb(0, 0, 0); /* Color del texto */
+        justify-content: center;
+        padding: 10px; /* Espaciado interno del texto */
+}
+.Tercercontenedor{
+	display: flex;
+}
+
+.cuadrado5{
+	width: 70%; 
+    height: 500px; 
+    background-color: black;
+    position: relative; 
+    justify-content: center;
+    display: flex;
+    top: 0; 
+    left: 0;
+    display: flex;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+
+}
+
+.cuadrado6 {
+	width: 100%; 
+    height: 300px; 
+    background-color: black; 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+	margin: 10px;
+	margin-top: 100px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+}
+
+.cuadrado5 > img{
+   margin-top: 100px;
+   width: 50%;
+   height: 300px;
+   position: relative
+   }
+
+header {
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1000px;
+	width:90%;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav > ul {
+	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:100%;
+	background:#000;
+	position:relative;
+}
+
+nav > ul li {
+	display:table-cell;
+}
+
+
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:#000;
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+
+nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+	top:0;
+}
+
+/*Colores*/
+nav ul li a .primero {
+	background:#FF0000;
+}
+
+nav ul li a .segundo {
+	background:#FF8000;
+}
+
+nav ul li a .tercero {
+	background:#FF0070;
+}
+
+nav ul li a .cuarto {
+	background:#626262;
+}
+
+nav ul li a .quinto {
+	background:#37a4d9;
+}
