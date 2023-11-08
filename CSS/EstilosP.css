@@ -1,0 +1,205 @@
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.Fila1 {
+    display: flex;
+	
+}
+.cuadro, .cuadro2, .cuadro3 {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    margin: 10px;
+    background-color: rgb(99, 99, 99);
+    transition: all 0.3s ease; 
+}
+
+.cuadro:hover, .cuadro2:hover, .cuadro3:hover {
+    transform: scale(1.1); /* Escala el cuadro al 120% del tamaño original al pasar el mouse sobre él */
+    background-color: rgb(190, 190, 190); /* Cambia el color de fondo al pasar el mouse sobre él */
+}
+
+.cuadro > img, .cuadro2 > img, .cuadro3 > img {
+	margin-top: 0px;
+	width: 100%;
+	height: 300px;
+	position: relative
+}
+.cuadro > h2, .cuadro2 > h2, .cuadro3 > h2 {
+	position: absolute; 
+	color: rgb(255, 255, 255); 
+	justify-content: center;
+	top: 0;
+	padding: 10px; 
+	margin: 20%;
+	margin-top: 70%;
+	
+}
+
+.cuadro3 > button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	justify-content: center;
+	margin: 20%;
+	margin-top: 20px;
+	
+  }
+
+  .cuadro2 > button {
+	background-color: #00ff2a;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	justify-content: center;
+	margin: 20%;
+	margin-top: 20px;
+	
+  }
+
+  .cuadro > button {
+	background-color: #ff0000;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	justify-content: center;
+	margin: 20%;
+	margin-top: 20px;
+	
+  }
+  
+.cuadro3 > button:hover {
+	background-color: #0056b3;
+  }
+
+header {
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1000px;
+	width:90%;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav > ul {
+	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:100%;
+	background:#000;
+	position:relative;
+}
+
+nav > ul li {
+	display:table-cell;
+}
+
+
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:#000;
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+
+nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+	top:0;
+}
+
+/*Colores*/
+nav ul li a .primero {
+	background:#FF0000;
+}
+
+nav ul li a .segundo {
+	background:#FF8000;
+}
+
+nav ul li a .tercero {
+	background:#FF0070;
+}
+
+nav ul li a .cuarto {
+	background:#626262;
+}
+
+nav ul li a .quinto {
+	background:#37a4d9;
+}
