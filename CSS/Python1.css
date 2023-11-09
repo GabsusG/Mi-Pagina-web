@@ -1,89 +1,6 @@
-
-.div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+.code {
+    margin-top: 10px;
 }
-
-.Fila1 {
-    display: flex;
-	
-}
-.cuadro, .cuadro2, .cuadro3 {
-    width: 450px;
-    height: 450px;
-    position: relative;
-    margin: 10px;
-    background-color: rgb(99, 99, 99);
-    transition: all 0.3s ease; 
-}
-
-.cuadro:hover, .cuadro2:hover, .cuadro3:hover {
-    transform: scale(1.1); /* Escala el cuadro al 120% del tamaño original al pasar el mouse sobre él */
-    background-color: rgb(190, 190, 190); /* Cambia el color de fondo al pasar el mouse sobre él */
-}
-
-.cuadro > img, .cuadro2 > img, .cuadro3 > img {
-	margin-top: 0px;
-	width: 100%;
-	height: 300px;
-	position: relative
-}
-.cuadro > h2, .cuadro2 > h2, .cuadro3 > h2 {
-	position: absolute; 
-	color: rgb(255, 255, 255); 
-	justify-content: center;
-	top: 0;
-	padding: 10px; 
-	margin: 20%;
-	margin-top: 70%;
-	
-}
-
-.cuadro3 > a > button {
-	background-color: #007bff;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	justify-content: center;
-	margin: 20%;
-	margin-top: 20px;
-	
-  }
-
-  .cuadro2 > button {
-	background-color: #00ff2a;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	justify-content: center;
-	margin: 20%;
-	margin-top: 20px;
-	
-  }
-
-  .cuadro > button {
-	background-color: #ff0000;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	justify-content: center;
-	margin: 20%;
-	margin-top: 20px;
-	
-  }
-  
-.cuadro3 > button:hover {
-	background-color: #0056b3;
-  }
 
 header {
 	margin-top:10px;
@@ -109,6 +26,7 @@ nav ul {
 
 nav > ul {
 	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
 	width:100%;
 	background:#000;
 	position:relative;

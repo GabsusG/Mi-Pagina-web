@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/dracula.min.css">
+<link rel="stylesheet" href="CSS/Python1.css">
+    <style>
+
+  body{
+        background-image: url('https://static.vecteezy.com/system/resources/previews/010/547/380/non_2x/black-and-white-gradient-background-free-photo.jpg');
+        height: 100%;
+        width: auto;
+    }
+    #editor {
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+
+
+.Letras > h1 {
+    background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	justify-content: center;
+	margin: 5%;
+	margin-top: 0%;
+}
+
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="Main.html"><span class="primero"><i class="icon icon-house"></i></span>Inicio</a></li>
+            <li><a href="PaginaP.html"><span class="segundo"><i class="icon icon-tag"></i></span>Python</a></li>
+            <li><a href="#"><span class="tercero"><i class="icon icon-suitcase"></i></span>Nose que poner</a></li>
+            <li><a href="#"><span class="cuarto"><i class="icon icon-text"></i></span>Acerca de mi</a></li>
+            <li><a href="#"><span class="quinto"><i class="icon icon-mail"></i></span>Blog</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="Letras">
+    <h1><center>Iniciar seccion en facebook</center></h1>
+</div>
+    <div id="editor" class="contenedor" >
+    </div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/python/python.min.js"></script>
+
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      
+var editor = CodeMirror(document.getElementById("editor"), {
+  mode: "python",
+  theme: "dracula",
+  lineNumbers: true,
+  styleActiveLine: true,
+  lineWrapping: true, 
+  viewportMargin: Infinity, 
+  readOnly:true,
+  value: `from selenium import webdriver\n\nimport time\n\ndriver = webdriver.Chrome()\n\ndriver.get("https://www.facebook.com")\n\n# Encuentra el campo de correo electrónico y escribe tu correo electrónico\nelement = driver.find_element_by_id("email")\nelement.send_keys("xxxxxxxxx@gmail.com")\n\n# Encuentra el campo de contraseña y escribe tu contraseña\nelement = driver.find_element_by_id("pass")\nelement.send_keys("xxxxxxxxx")\n\nelement.submit()\n# Espera durante 10 segundos antes de que el navegador se cierre\ntime.sleep(10)\n\ndriver.quit()`
+});
+
+});
+  </script>
+
+
+
+</body>
+</html>

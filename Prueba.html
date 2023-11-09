@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeMirror Example</title>
+  <!-- Agrega los estilos CSS de CodeMirror -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+  <!-- Agrega los estilos de tu tema preferido (por ejemplo, 'dracula') -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/dracula.min.css">
+</head>
+<body>
+  <!-- Contenedor para el editor CodeMirror -->
+  <div id="editor"></div>
+
+  <!-- Agrega el archivo JavaScript de CodeMirror -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+  <!-- Agrega el modo de lenguaje que desees usar (por ejemplo, 'python') -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/python/python.min.js"></script>
+
+  <script>
+    // Espera a que el DOM esté completamente cargado antes de ejecutar el código
+    document.addEventListener("DOMContentLoaded", function() {
+      // Inicializa CodeMirror en el elemento con id "editor"
+      var editor = CodeMirror(document.getElementById("editor"), {
+        mode: "python", // Configura el modo de lenguaje
+        theme: "dracula",   // Configura el tema del editor
+        lineNumbers: true    // Muestra números de línea
+      });
+
+      // Inserta el código Python en el editor
+      editor.setValue(`from selenium import webdriver\n\nimport time\n\ndriver = webdriver.Chrome()\n\ndriver.get("https://www.facebook.com")\n\n# Encuentra el campo de correo electrónico y escribe tu correo electrónico\nelement = driver.find_element_by_id("email")\nelement.send_keys("xxxxxxxxx@gmail.com")\n\n# Encuentra el campo de contraseña y escribe tu contraseña\nelement = driver.find_element_by_id("pass")\nelement.send_keys("xxxxxxxxx")\n\nelement.submit()\n# Espera durante 10 segundos antes de que el navegador se cierre\ntime.sleep(10)\n\ndriver.quit()`);
+    });
+  </script>
+</body>
+</html>
