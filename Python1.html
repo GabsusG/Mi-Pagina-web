@@ -20,6 +20,7 @@
         margin-left: auto;
         margin-right: auto;
         
+        
     }
 
 
@@ -67,10 +68,10 @@ var editor = CodeMirror(document.getElementById("editor"), {
   theme: "dracula",
   lineNumbers: true,
   styleActiveLine: true,
-  lineWrapping: true, 
+  lineWrapping: false, 
   viewportMargin: Infinity, 
   readOnly:true,
-  value: `from selenium import webdriver\n\nimport time\n\ndriver = webdriver.Chrome()\n\ndriver.get("https://www.facebook.com")\n\n# Encuentra el campo de correo electrónico y escribe tu correo electrónico\nelement = driver.find_element_by_id("email")\nelement.send_keys("xxxxxxxxx@gmail.com")\n\n# Encuentra el campo de contraseña y escribe tu contraseña\nelement = driver.find_element_by_id("pass")\nelement.send_keys("xxxxxxxxx")\n\nelement.submit()\n# Espera durante 10 segundos antes de que el navegador se cierre\ntime.sleep(10)\n\ndriver.quit()`
+  value: `from selenium import webdriver\n\nimport time\n\ndriver = webdriver.Chrome()\n\ndriver.get("https://www.facebook.com")\n\n# Encuentra el campo de correo electrónico y escribe tu correo electrónico\nelement = driver.find_element("id", "email")\nelement.send_keys("xxxxxxxxx@gmail.com")\n\n# Encuentra el campo de contraseña y escribe tu contraseña\nelement = driver.find_element("id", "pass")\nelement.send_keys("xxxxxxxxx")\n\nelement.submit()\n# Espera durante 10 segundos antes de que el navegador se cierre\ntime.sleep(10)\n\ndriver.quit()`
 });
 
 });
